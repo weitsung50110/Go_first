@@ -1,0 +1,23 @@
+// 定義變數
+$main-font: Arial, sans-serif //主要字體變數
+$primary-color: #f7d4d4 //主要顏色變數
+
+// Body 元素樣式
+body
+    font-family: $main-font // 使用主要字體變數設置字體
+    text-align: center // 文字居中
+
+    // 輸入框和按鈕樣式
+    input[type="text"],
+    button
+        padding: 5px
+        margin: 5px
+
+    button
+        cursor: pointer // 設置按鈕為可點擊狀態
+
+// 文字顯示區域樣式
+#textDisplay
+    margin-top: 20px // 上方間距
+    padding: 10px // 內邊距
+    border: 1px solid $primary-color // 使用主要顏色變數設置邊框

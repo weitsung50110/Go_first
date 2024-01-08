@@ -9,6 +9,26 @@ middlewares/：存放中間件的資料夾。 <br/>
 static/：存放靜態檔案（如 CSS、JavaScript 等）的資料夾。 <br/>
 templates/：存放 HTML 範本文件的資料夾。
 
+1go_first<br />
+├── go.mod<br />
+├── go.sum<br />
+├── main.go<br />
+├── myla.exe<br />
+├── mymain.exe<br />
+├── package.json<br />
+├── static<br />
+│   ├── script.js<br />
+│   ├── styles.css<br />
+│   ├── styles.css.map<br />
+│   ├── styles.sass<br />
+│   └── styles.scss<br />
+└── templates<br />
+    └── index.html
+
+搜尋文件的指令
+
+        dir /s /b /a-d | findstr /V /I "\\node_modules\\" | findstr /V /I "\\.git\\"
+
 ### 建立新項目：
 使用 go mod init 指令初始化新的 Go 項目，並安裝 Gin 框架：
 
